@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.container {
+width: 110px;
+height: 110px; 
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.5s;
+}
+.social {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+z-index: -1;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(214, 122, 214, 0.7);
+}
+
+.container:hover {
+width: 140px;
+height: 140px;
+}
+.container:hover .social {
+    transition: 0.5s;
+    box-shadow: 0 0 20px rgba(214, 122, 214, 0.7);
+}
+
+.container:hover .social:nth-child(1){
+transform: rotate(-60deg) translateY(-120px);
+}
+.container:hover .social:nth-child(2){
+transition-delay: 0.1s;
+transform: rotate(-30deg) translateY(-120px);
+}
+.container:hover .social:nth-child(3){
+    transition-delay: 0.2s;
+transform: rotate(0deg) translateY(-120px);
+        }
+.container:hover .social:nth-child(4){
+    transition-delay: 0.3s;
+transform: rotate(30deg) translateY(-120px);
+}
+.container:hover .social:nth-child(5){
+    transition-delay: 0.4s;
+transform: rotate(60deg) translateY(-120px);
+}
+
+i {
+    transition: 0.5s;
+}
+.social:hover i {
+    transform: rotate(360deg);
+}
